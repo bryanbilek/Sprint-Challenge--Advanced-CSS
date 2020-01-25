@@ -1,1 +1,33 @@
 // Navigation code here
+nav {
+    .display-column();
+    align-items: center;
+    width: 100%;
+    background-color: @wild-sand;    
+
+    .top-headline {
+        .center-width();
+        padding: 1% 0;
+    }
+      h1 {
+          font-size: 4rem;
+      }
+
+    .links {
+        .center-width();
+        font-size: 1.5rem; 
+        justify-content: space-around;
+        padding: 0 0 1% 0;
+    }
+    
+    a {
+        margin: 0 1%;
+        text-decoration: none;
+        color: @river-bend;
+
+        @media @phone {
+            margin: 0 2%;
+        }
+    }
+
+}

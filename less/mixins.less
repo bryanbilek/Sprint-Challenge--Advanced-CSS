@@ -1,1 +1,22 @@
 // Mixins Here
+.center-width {
+    text-align: center;
+    width: 100%;
+}
+
+.display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-button (@width, @bg-color, @color, @f-size, @bor-radius, @pad, @text-align) {
+    width: @width;
+    background-color: @bg-color;
+    color: @color;
+    font-size: @f-size;
+    border-radius: @bor-radius;
+    padding: @pad;
+    text-align: @text-align;
+}
+
+

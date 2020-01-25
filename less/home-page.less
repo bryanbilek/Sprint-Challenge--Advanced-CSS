@@ -14,16 +14,28 @@
   
   }
 
+
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      flex-direction: column;
+      align-content: center;
+      }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+    
     }
   }
 
@@ -46,6 +58,10 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -58,7 +74,12 @@
       }
 
       .btn {
-      }
+        .custom-button(30%, @btn-bg-color, white, 2rem, 5px, 2%, center);
+        &:hover {
+          background-color: white;
+          color: @btn-bg-color;
+        }
+      }    
     }
 
     .walk-img {
